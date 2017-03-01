@@ -1,7 +1,7 @@
 {
   "name": "cfn-template-stream",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Streamingly read/parse/stringify CloudFormation templates",
   "license": "MIT",
   "repository": "bendrucker/cfn-template-stream",
