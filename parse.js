@@ -20,7 +20,7 @@ function YamlParse () {
   return new Transform({
     objectMode: true,
     transform: function (chunk, enc, callback) {
-      callback(null, yaml.load(chunk, {schema}))
+      callback(null, yaml.load(chunk, { schema }))
     }
   })
 }
