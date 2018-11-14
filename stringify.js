@@ -28,7 +28,7 @@ function YamlStringify () {
   return new Transform({
     objectMode: true,
     transform: function (chunk, enc, callback) {
-      callback(null, yaml.dump(chunk, {schema}))
+      callback(null, yaml.dump(chunk, { schema }))
     }
   })
 }

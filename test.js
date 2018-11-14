@@ -38,11 +38,11 @@ test('Stringify: yaml', function (t) {
       }
     }
   ])
-  .on('error', t.end)
-  .pipe(cfnTemplate.Stringify('.yml'))
-  .pipe(concat(function (data) {
-    t.equal(data, `Resources:\n  Stack: {}\n`)
-  }))
+    .on('error', t.end)
+    .pipe(cfnTemplate.Stringify('.yml'))
+    .pipe(concat(function (data) {
+      t.equal(data, `Resources:\n  Stack: {}\n`)
+    }))
 })
 
 test('Stringify: json', function (t) {
@@ -55,9 +55,9 @@ test('Stringify: json', function (t) {
   }
 
   fromArray([input])
-  .on('error', t.end)
-  .pipe(cfnTemplate.Stringify('.json'))
-  .pipe(concat(function (data) {
-    t.equal(data, JSON.stringify(input, null, 2))
-  }))
+    .on('error', t.end)
+    .pipe(cfnTemplate.Stringify('.json'))
+    .pipe(concat(function (data) {
+      t.equal(data, JSON.stringify(input, null, 2))
+    }))
 })
