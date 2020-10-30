@@ -1,8 +1,8 @@
 'use strict'
 
-var Parse = require('./parse')
-var Stringify = require('./stringify')
-var fromFile = require('./file')
+const Parse = require('./parse')
+const Stringify = require('./stringify')
+const fromFile = require('./file')
 
 module.exports = {
   Parse,

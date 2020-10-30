@@ -1,8 +1,8 @@
 'use strict'
 
-var fs = require('fs')
-var extname = require('path').extname
-var ParseStream = require('./parse')
+const fs = require('fs')
+const extname = require('path').extname
+const ParseStream = require('./parse')
 
 module.exports = createReadStream
 

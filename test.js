@@ -1,10 +1,10 @@
 'use strict'
 
-var test = require('tape')
-var path = require('path')
-var concat = require('concat-stream')
-var fromArray = require('stream-array')
-var cfnTemplate = require('./')
+const test = require('tape')
+const path = require('path')
+const concat = require('concat-stream')
+const fromArray = require('stream-array')
+const cfnTemplate = require('./')
 
 test('Parse: yaml', function (t) {
   t.plan(2)
@@ -41,14 +41,14 @@ test('Stringify: yaml', function (t) {
     .on('error', t.end)
     .pipe(cfnTemplate.Stringify('.yml'))
     .pipe(concat(function (data) {
-      t.equal(data, `Resources:\n  Stack: {}\n`)
+      t.equal(data, 'Resources:\n  Stack: {}\n')
     }))
 })
 
 test('Stringify: json', function (t) {
   t.plan(1)
 
-  var input = {
+  const input = {
     Resources: {
       Stack: {}
     }

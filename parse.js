@@ -1,10 +1,10 @@
 'use strict'
 
-var assert = require('assert')
-var JSONStream = require('JSONStream')
-var Transform = require('stream').Transform
-var yaml = require('js-yaml')
-var schema = require('js-yaml-schema-cfn')
+const assert = require('assert')
+const JSONStream = require('JSONStream')
+const Transform = require('stream').Transform
+const yaml = require('js-yaml')
+const schema = require('js-yaml-schema-cfn')
 
 module.exports = TemplateParserStream
 
