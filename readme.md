@@ -1,4 +1,4 @@
-# cfn-template-stream [![Build Status](https://travis-ci.org/bendrucker/cfn-template-stream.svg?branch=master)](https://travis-ci.org/bendrucker/cfn-template-stream) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/cfn-template-stream.svg)](https://greenkeeper.io/)
+# cfn-template-stream [![tests](https://github.com/bendrucker/cfn-template-stream/workflows/tests/badge.svg)](https://github.com/bendrucker/cfn-template-stream/actions?query=workflow%3Atests)
 
 > Streamingly read/parse/stringify CloudFormation templates
 
