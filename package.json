@@ -8,7 +8,7 @@
   "author": {
     "name": "Ben Drucker",
     "email": "bvdrucker@gmail.com",
-    "url": "bendrucker.me"
+    "url": "https://www.bendrucker.me"
   },
   "scripts": {
     "test": "standard && tape test.js"
